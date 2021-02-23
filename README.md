@@ -2,7 +2,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner/blob/master/LICENSE.txt]
+[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/cherkaouiya/]
 
 
