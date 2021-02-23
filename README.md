@@ -1,49 +1,32 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![MIT License][license-shield]][https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner/blob/master/LICENSE.txt]
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/cherkaouiya/]
 
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">The Winner</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    une application de jeux en ligne nomée "The Winner" pour se faire on a besoin de créer une API en Node JS et consommer en React JS
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="#"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="#">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="#">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="#">Request Feature</a>
   </p>
 </p>
 
@@ -82,31 +65,36 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+On souhaite créer une application de jeux en ligne nomée "The Winner" pour se faire on a besoin de créer une API en Node JS et consommer en React JS le déroulement de l'application est comme suit:
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+Backoffice
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+l'administrateur de l'application entre les catégorie de chaque jeux via son interface backoffice (exemple: Sport, Music, Science...) l'adminitrateur doit rremplir 10 question par catégorie (Minimum 2 catégorie)
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+FrontOffice: *un utilisateur doit s'inscrire pour passer le jeux "The Winner" *chaque utilisateur peut choisir au début la catégorie de son jeux *chaque utilisateur a le droit de passer 3 essais maximum pour réussir le jeux The Winner s'il echoue dans une question, il doit repasser le test *l'utilisateur peut passer la question (cette question est annulée sur son solde) *chaque question vaut 10 points *le total des pint du jeux est 100 points à la fin de jeux l'utilisateur consulte son solde de point s'il a gagné ou non *le premier prix du jeux est 100 points *le deuxième prix du jeux est 100 points *le troisième prix du jeux est 100 points
+
+*une fois le client a gagné le jeux, il recevera un email de confirmation qui contiendra le descriptif de son cadeau
+
+*un fichier log sera enregistré dans le système à l'aide d'un module comme Winston ou Morgan
+
+*Assurer le bon fonctionnement de votre application en applicant le test unitaires à vos méthodes utilisées *sécuriser l'authentifications à l'aide du Jason Web Token *créer une base de données MongoDb adéquate ********************* Si vous avrrivez à compléter la totalité du brief, vous pouvez ajouter un compteur de 20 secondes comme expiration pour chaque question
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [HTML5](https://www.w3schools.com/html/)
+* [Node.js](https://nodejs.org/)
+* [noSQL](https://www.mongodb.com/nosql-explained)
+* [React](https://reactjs.org/)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+How to excute application:
 
 ### Prerequisites
 
@@ -173,9 +161,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Yassine Cherkaoui - [@your_twitter](https://twitter.com/CherkaouiYa) - yassin.cherkaoui2000@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
 
 
 
@@ -193,22 +181,3 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
 
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
