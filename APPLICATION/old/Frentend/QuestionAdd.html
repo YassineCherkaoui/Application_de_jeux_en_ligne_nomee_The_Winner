@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Question.css">
+</head>
+
+<body>
+    <style>
+
+    </style>
+    <!-- MultiStep Form -->
+    <div class="container-fluid" id="grad1">
+        <div class="row justify-content-center mt-0">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h2><strong>Add Questions</strong></h2>
+                    <p>Fill all form field to go to next step</p>
+                    <div class="row">
+                        <div class="col-md-12 mx-0">
+                            <form id="msform" action="/Question.html">
+                                <!-- progressbar -->
+                                <ul id="progressbar">
+                                    <li class="active" id="account"><strong>Cateogry</strong></li>
+                                    <li id="personal"><strong>Questions1</strong></li>
+                                    <li id="personal"><strong>Questions2</strong></li>
+                                    <li id="personal"><strong>Questions3</strong></li>
+                                    <li id="personal"><strong>Questions4</strong></li>
+                                    <li id="personal"><strong>Questions5</strong></li>
+                                    <li id="personal"><strong>Questions6</strong></li>
+                                    <li id="personal"><strong>Questions7</strong></li>
+                                    <li id="personal"><strong>Questions8</strong></li>
+                                    <li id="personal"><strong>Questions9</strong></li>
+                                    <li id="personal"><strong>Questions10</strong></li>
+                                    <li id="confirm"><strong>Finish</strong></li>
+                                </ul> <!-- fieldsets -->
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title">Cateogry</h2>
+                                        <select name="" id="catyselect">
+                                            <option value="">Select Category</option>
+                                            
+                                        </select>
+                                    </div> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 1</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <!-- <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 2</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 3</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues"  placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 4</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 5</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 6</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 7</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 8</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 9</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c" placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f" placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f" placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f" placeholder="answer4 Incorect"/> 
+                                    </div> <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" /> <input type="button" name="next" class="next action-button"
+                                        value="Next Step" />
+                                </fieldset>
+                                -->
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title" style="text-align: center;">Question 10</h2>
+                                        <p class="fs-title">Main Question</p>
+                                        <input type="text" id="MainQues" placeholder="Main Question"/>
+                                        <p class="fs-title">Answers</p>
+                                            <input type="text" id="q1c"  placeholder="answer1 Correct"/> 
+                                            <input type="text" id="q1f"  placeholder="answer2 Incorect"/>
+                                            <input type="text" id="q2f"  placeholder="answer3 Incorect"/> 
+                                            <input type="text" id="q3f"  placeholder="answer4 Incorect"/> 
+                                    </div> 
+                                    <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+                                    <input type="button" name="next" class="next action-button" value="submit" id="addQTSS" type="submit"/>
+                                </fieldset> 
+                                <fieldset>
+                                    <div class="form-card">
+                                        <h2 class="fs-title text-center">Success !</h2> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-3"> <img
+                                                    src="img/ok.png"
+                                                    class="fit-image"> </div>
+                                        </div> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 text-center">
+                                                <h5>Your Questions added successfully</h5>
+                                                <button class="next action-button" type="submit">List</button>
+                                                <a class="next action-button" onClick="window.location.reload()">Add Another</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script src="Api/Question_Api.js"></script>
+
+    <script src="Js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
