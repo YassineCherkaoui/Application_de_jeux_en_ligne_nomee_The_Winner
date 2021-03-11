@@ -15,6 +15,7 @@ import EditQuestion from '../Dash/EditQuestion';
 import AdminLogin from '../Dash/AdminLogin';
 import Play from '../Home/Play';
 import Winner from '../Home/Winner';
+import Lose from '../Home/lose';
 import PrivateRoute from '../authtification/PrivateRoute';
 
 import SignUp from '../Home/pages/SignUp';
@@ -40,7 +41,7 @@ function Routes() {
           <Route  path="/admin" exact component={AdminLogin}/>
           <PrivateRoute  path="/play" exact component={Play}/>
           <PrivateRoute  path="/winner" exact component={Winner}/>
-
+          <PrivateRoute  path="/lose" exact component={Lose}/>
           <Route path='/sign-up' component={SignUp} />
           <Route path='/inscrit' component={inscrit} />
       </Switch>

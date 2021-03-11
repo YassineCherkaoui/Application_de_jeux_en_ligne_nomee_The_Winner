@@ -59,7 +59,8 @@ const Play = () => {
                         let oldNumTry = numTry;
                         setNumTry(oldNumTry + 1)
                         setNumFalseQuestion(0);
-                        setQuestionNum(0)
+                        setQuestionNum(0);
+                        setScore(0)
                         
                     }else{
                       
@@ -75,7 +76,7 @@ const Play = () => {
 
             
         } else {
-            history.push('/winner');
+            history.push('/lose');
           
             
         }
