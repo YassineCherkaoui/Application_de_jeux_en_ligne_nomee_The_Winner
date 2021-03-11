@@ -31,8 +31,7 @@ const Question = new Schema(
     trim: true,
  },
     nameCategory: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Category'
+      type: String,
   },
   },
   {

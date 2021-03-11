@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">The Winner</h3>
@@ -63,6 +63,8 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+[![Product Name Screen Shot][TheWinning-screenshot]](https://example.com)
 
 On souhaite créer une application de jeux en ligne nomée "The Winner" pour se faire on a besoin de créer une API en Node JS et consommer en React JS le déroulement de l'application est comme suit:
 
@@ -183,7 +185,6 @@ Project Link: [https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
@@ -197,3 +198,4 @@ Project Link: [https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
+[TheWinning-screenshot]: images/video.gif

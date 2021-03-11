@@ -1,29 +1,30 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import './home.css';
-// import { Nav } from 'reactstrap';
-
-
+import { Button } from './Button';
+import './style/HeroSection.css';
+import video from './pages/videos/video-1.mp4'
+import Navbar from './Navbar'
 
 
 
 const Home = () => (
+  // <body>
   <div>
-  
-
-
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Welcome to The Winning</h1>
-      <h3 class="mb-5">
-        <em>The winning is the best compition for you Start developping your self by Click ON 'START'</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="http://localhost:3000/register">START</a>
+  <Navbar />
+  <div className='hero-container'>
+      <video src={video} autoPlay loop muted />
+      <h1>Welcome To the winner Game</h1>
+      <p>Are you ready?</p>
+      <div className='hero-btns'>
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+        >
+          GET STARTED
+        </Button>
+      </div>
     </div>
-    <div class="overlay"></div>
-  </header>
-</div>
-
+    </div>
     );
 
 
