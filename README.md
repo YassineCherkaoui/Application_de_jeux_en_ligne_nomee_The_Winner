@@ -153,7 +153,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Yassine Cherkaoui - [@your_twitter](https://twitter.com/CherkaouiYa) - yassin.cherkaoui2000@gmail.com
+Yassine Cherkaoui - [@CherkaouiYa](https://twitter.com/CherkaouiYa) - yassin.cherkaoui2000@gmail.com
 
 Project Link: [https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
 
