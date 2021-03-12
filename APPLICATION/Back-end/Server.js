@@ -20,7 +20,7 @@ console.log(score);
     service: "gmail",
 		auth: {
 			user: 'cyassin95@gmail.com',
-			pass: 'Sanasaida123'
+			pass: ''
 		}
 	})
 
