@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useHistory } from 'react-router-dom';
 import axios from 'axios';
-import './Quiz.css';
+import './style/quiz.css';
 import Navbar from './Navbar2';
 
 const Quiz = () => {
@@ -10,13 +10,9 @@ const Quiz = () => {
   const [categories , setCategories] = useState(null);
 
   useEffect(()=>{
-  
     axios.get(`http://localhost:8081/category`)
       .then(function (response) {
-       
-     
         setCategories(response.data)
-      
       }).catch(function (err) {
         console.log(err);
     });

@@ -1,12 +1,6 @@
 import { useState,useEffect } from 'react';
-// import { Link } from "react-router-dom";
 import axios from 'axios';
-
-import './dashboard.css';
-
-
-
-
+import './Style/dashboard.css';
 
 const EditCategory =(props) => {
 

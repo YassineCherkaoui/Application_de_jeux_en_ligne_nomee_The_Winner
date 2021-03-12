@@ -1,42 +1,27 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
-
 import axios from 'axios';
-
-import './dashboard.css';
-
-
-
-
+import './Style/dashboard.css';
 
 function AddCategory() {
 
 const history=useHistory();
+const [nameCategory, setNameCategory] = useState();
+const handleSubmit = (e) => {
 
-	const [nameCategory, setNameCategory] = useState();
-
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-
-	const category = {nameCategory};
-
-	axios.post(`http://localhost:8081/category/add`,category)
-          
-
-  
-		.then(res => {
-		    if(res.error){
-				return false
+	  e.preventDefault();
+  const category = {nameCategory};
+	      axios.post(`http://localhost:8081/category/add`,category)
+	      	.then(res => {
+		          if(res.error){
+			  	return false
 			}else{
-				
 				 console.log(res.data);
          history.push('/categories')
 			}
-		 
 		})
 	}
-
+// _____________________ Return________________
   return(
     <div>
     <div class="simple-login-container">
@@ -58,7 +43,6 @@ const history=useHistory();
     </form>
 </div>
 </div>
-
   )
 }
 export default AddCategory;

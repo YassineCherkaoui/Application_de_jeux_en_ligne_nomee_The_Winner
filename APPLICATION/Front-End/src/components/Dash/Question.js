@@ -1,13 +1,11 @@
 import {useEffect, useState} from 'react';
-import './dashboard.css';
-
+import './Style/dashboard.css';
 import { Link,useHistory  } from 'react-router-dom';
 import axios from 'axios';
-import logo from './logo1.jpg';
+import logo from './Style/logo1.jpg';
 
 function Question() {
-  
-  const history = useHistory();
+const history = useHistory();
 //----------- show gategory added in datatable------------
 const [questions , setQuestions] = useState(null);
 useEffect(()=>{

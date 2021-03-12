@@ -1,21 +1,15 @@
 import React, { useState,useEffect} from 'react';
 import {useHistory } from "react-router-dom";
-// import Select from 'react-select';
 import axios from 'axios';
-
-import './dashboard.css';
-
-
-
-
+import './Style/dashboard.css';
 
 function EditQuestion() {
   const history = useHistory();
-  const [question, setQuestion] = useState("");
-  const [correctAnswer, setCorrectAnswer] = useState("");
-  const [incorrectAnswer1, setIncorrectAnswer1] = useState("");
-  const [incorrectAnswer2, setIncorrectAnswer2] = useState("");
-  const [incorrectAnswer3, setIncorrectAnswer3] = useState("");
+  const [question, setQuestion] = useState();
+  const [correctAnswer, setCorrectAnswer] = useState();
+  const [incorrectAnswer1, setIncorrectAnswer1] = useState();
+  const [incorrectAnswer2, setIncorrectAnswer2] = useState();
+  const [incorrectAnswer3, setIncorrectAnswer3] = useState();
   const [nameCategory, setNameCategory] = useState();
 
   const idQts=localStorage.getItem('idQuestion');
@@ -83,48 +77,48 @@ useEffect(()=>{
 
     <div class="simple-login-container">
         <h2>Add Question</h2>
-    <form id="form" data-parsley-validate onSubmit={handleSubmit}>
-        <div class="row">
-            <div class="col-md-12 form-group">
-            <input className="form-control" type="text" 
-          placeholder="Question" 
-          value={question|| ''}
-          onChange={e => setQuestion(e.target.value)}class="form-control"/>
-            </div>
+        <form id="form" data-parsley-validate onSubmit={handleSubmit}>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input className="form-control" id="name" type="text"
+          placeholder="question" required 
+          value={question}
+          onChange={e => setQuestion(e.target.value)} class="form-control"/>
         </div>
-    
-        <div class="row">
-            <div class="col-md-12 form-group">
-            <input className="form-control" id="name" type="text" placeholder="Correct Answer" required 
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 form-group">
+        <input className="form-control" id="name" type="text" placeholder="Correct Answer" required 
             value={correctAnswer}
-            onChange={e => setCorrectAnswer(e.target.value)}class="form-control" />
-            </div>
+            onChange={e => setCorrectAnswer(e.target.value)} class="form-control"/>
         </div>
-    
-    
-        <div class="row">
-            <div class="col-md-12 form-group">
-            <input className="form-control" id="name" type="text" placeholder="Incorrect Answer 1" required 
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 form-group">
+        <input className="form-control" id="name" type="text" placeholder="Incorrect Answer 1" required 
             value={incorrectAnswer1}
             onChange={e => setIncorrectAnswer1(e.target.value)} class="form-control"/>
-            </div>
         </div>
-    
-        <div class="row">
-            <div class="col-md-12 form-group">
-            <input className="form-control" id="name" type="text" placeholder="Incorrect Answer 2" required 
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 form-group">
+        <input className="form-control" id="name" type="text" placeholder="Incorrect Answer 2" required 
             value={incorrectAnswer2}
             onChange={e => setIncorrectAnswer2(e.target.value)} class="form-control"/>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 form-group">
-            <input className="form-control" id="name" type="text" placeholder="Incorrect Answer 3" required 
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+        <input className="form-control" id="name" type="text" placeholder="Incorrect Answer 3" required 
             value={incorrectAnswer3}
             onChange={e => setIncorrectAnswer3(e.target.value)}class="form-control" />
-            </div>
         </div>
-        <div class="row">
+    </div>
+    <div class="row">
         <div class="col-md-12 form-group">
         <select className="form-control " ref={(e) => idCategory = e}  id="selectbtn" name="nameCategory" class="form-control">
         <option value="">Categories</option>
@@ -134,14 +128,15 @@ useEffect(()=>{
         </select>  
         </div>
     </div>
-        <div class="row">
-            <div class="col-md-12 form-group">
-                <input type="submit" id="AddCatg" class="btn btn-block btn-login"/>
-            </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="submit" id="AddCatg" class="btn btn-block btn-login"/>
         </div>
-        </form>
     </div>
-    </div>
+    </form>
+</div>
+
+</div>
 
   )
 }

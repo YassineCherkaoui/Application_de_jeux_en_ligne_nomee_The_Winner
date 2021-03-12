@@ -2,11 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Home/home.css';
 
-
-
-
-
-
 const Admin = () => (
 
 
@@ -15,7 +10,6 @@ const Admin = () => (
             <section id="section">
                 <div style={{textAlign: 'center'}}>
                     <span className="mdi mdi-cube-outline cube"></span>
-              
                 </div>
                     <h2>Admin</h2>
                 <form>

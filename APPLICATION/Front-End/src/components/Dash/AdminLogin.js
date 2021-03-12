@@ -1,26 +1,13 @@
-// import React, { useState } from 'react';
+
 import { useHistory } from "react-router-dom";
-// import axios from 'axios';
-// import '../Login/login.css';
-// import './adminlogin.css'
 import toastr from 'toastr';
-// import "toastr/build/toastr.css";
-// import Form from "react-validation/build/form";
-// import Input from "react-validation/build/input";
-// import { Button } from 'reactstrap';
 import React, { useState } from 'react';
-// import { useHistory } from "react-router-dom";
 import axios from 'axios';
 import '../Home/pages/inscrit.css';
-import logo from './logo1.jpg'
-
-
+import logo from './Style/logo1.jpg'
 const Login = (props) => {
 
 	const history = useHistory();
-	// const [userName, setUserName] = useState();
-    // const [password, setPassword] = useState();
-
 	const [userName, setUserName] = useState();
     const [password, setPassword] = useState();
 
@@ -71,7 +58,6 @@ const Login = (props) => {
 		onChange={e => setPassword(e.target.value)} />
           <input type="submit" className="fadeIn fourth" defaultValue="Log In" id="login-button" />
         </form>
-        {/* Remind Passowrd */}
         <div id="formFooter">
          <a className="underlineHover" href="/inscrit">Creat account</a>
         </div>

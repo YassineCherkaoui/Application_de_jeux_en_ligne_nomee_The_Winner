@@ -1,13 +1,7 @@
-// import React,{useState} from 'react';
-// import { Link } from 'react-router-dom';
-// import './home.css';
+
 import video from './pages/videos/lose.mp4'
 import Navbar from './Navbar2'
-import './lose.css';
-// import { Button } from './Button';
-
-
-
+import './style/lose.css';
 
 const Loser = () => {
 
@@ -28,5 +22,5 @@ return(
 
     );
             }
-
+            
 export default Loser;

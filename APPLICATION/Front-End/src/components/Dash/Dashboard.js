@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-
 import axios from 'axios';
-
-import './dashboard.css';
-
-
-import logo from './logo1.jpg';
-
-
+import './Style/dashboard.css';
+import logo from './Style/logo1.jpg';
 
 
 export default class Categories extends Component {
-
-
     constructor(props) {
       super(props)
     

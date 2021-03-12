@@ -31,8 +31,8 @@ const Admin = new Schema(
       required: true,
       trim: true,
   },
-  },
-  {
+    },
+    {
     versionKey: false
 }
 );

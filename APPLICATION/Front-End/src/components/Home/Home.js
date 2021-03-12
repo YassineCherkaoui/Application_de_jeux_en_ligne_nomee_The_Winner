@@ -4,8 +4,6 @@ import './style/HeroSection.css';
 import video from './pages/videos/video-1.mp4'
 import Navbar from './Navbar'
 
-
-
 const Home = () => (
   // <body>
   <div>
@@ -26,6 +24,5 @@ const Home = () => (
     </div>
     </div>
     );
-
 
 export default Home;

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Tenali+Ramakrishna&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Tenali+Ramakrishna&family=Vast+Shadow&display=swap');
 .questback{
-    background-image: url(./pages/images/back.jpg);
+    background-image: url(../pages/images/back.jpg);
     height: 948px;
     background-size: cover;
 }

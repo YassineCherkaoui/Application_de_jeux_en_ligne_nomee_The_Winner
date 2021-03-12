@@ -66,6 +66,16 @@
 
 [![Product Name Screen Shot][TheWinning-screenshot]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
 
+[![Product Name Screen Shot][product-screenshot]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
+
+[![Product Name Screen Shot][product-screenshot1]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
+[![Product Name Screen Shot][product-screenshot2]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
+[![Product Name Screen Shot][product-screenshot3]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
+[![Product Name Screen Shot][product-screenshot4]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
+[![Product Name Screen Shot][product-screenshot5]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
+[![Product Name Screen Shot][product-screenshot6]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
+[![Product Name Screen Shot][product-screenshot7]](https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_nomee_The_Winner)
+
 On souhaite créer une application de jeux en ligne nomée "The Winner" pour se faire on a besoin de créer une API en Node JS et consommer en React JS le déroulement de l'application est comme suit:
 
 Backoffice
@@ -180,3 +190,9 @@ Project Link: [https://github.com/YassineCherkaoui/Application_de_jeux_en_ligne_
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
 [TheWinning-screenshot]: images/video.gif
+[product-screenshot2]: images/signup.png
+[product-screenshot3]: images/login.png
+[product-screenshot4]: images/list-category.png
+[product-screenshot5]: images/game.png
+[product-screenshot6]: images/dashboard.png
+[product-screenshot7]: images/crudCtagrie.png

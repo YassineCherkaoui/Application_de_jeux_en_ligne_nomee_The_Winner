@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-
 import axios from 'axios';
-import logo from './logo1.jpg';
-import './dashboard.css';
-
-
-
-
-
+import logo from './Style/logo1.jpg';
+import './Style/dashboard.css';
 
 export default class Categories extends Component {
 

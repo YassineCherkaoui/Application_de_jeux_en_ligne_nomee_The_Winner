@@ -1,66 +1,46 @@
 import React, { useState,useEffect } from 'react';
 import {useHistory } from "react-router-dom";
 import axios from 'axios';
+import './Style/dashboard.css';
 
-import './dashboard.css';
-
-
-
-
-
-function AddQuestion(props) {
-
+function AddQuestion() {
   const history = useHistory();
-
   const [question, setQuestion] = useState();
   const [correctAnswer, setCorrectAnswer] = useState();
   const [incorrectAnswer1, setIncorrectAnswer1] = useState();
   const [incorrectAnswer2, setIncorrectAnswer2] = useState();
   const [incorrectAnswer3, setIncorrectAnswer3] = useState();
   const [nameCategory, setNameCategory] = useState();
-let idCategory;
-//---------add question------------- 
-
+    let idCategory;
+    //---------add question------------- 
 	const handleSubmit = (e) => {
 		 e.preventDefault();
         var id = idCategory.value;
-
-
-    // let ArrayincorrectAnswers = incorrectAnswers.split(",");
-
-    const DATA = {question,correctAnswer,incorrectAnswer1,incorrectAnswer2,incorrectAnswer3, nameCategory : id};
-
-	axios.post(`http://localhost:8081/question/add`,DATA)
-          
+        const DATA = {question,correctAnswer,incorrectAnswer1,incorrectAnswer2,incorrectAnswer3, nameCategory : id};
+	    axios.post(`http://localhost:8081/question/add`,DATA) 
             .then(res => {
                 if(res.error){
                     return false
-                }else{
-                    
-                     console.log(res.data);
-             history.push('/questions')
+                }else{  
+                    console.log(res.data);
+                    history.push('/questions')
                 }
 		})
 	}
-// get all category and show it in select
-  useEffect(()=>{
 
+// get all category and show it in select
+useEffect(()=>{
     axios.get(`http://localhost:8081/category`)
       .then(function (response) {
-          
         setNameCategory(response.data)
       }).catch(function (err) {
         console.log(err);
     });
-    
-    },  [])
-  return(
-    
+}, [])
+
+return(    
     <div className="container-xl">
-
-
-
-<div class="simple-login-container">
+    <div class="simple-login-container">
     <h2>Add Question</h2>
     <form id="form" data-parsley-validate onSubmit={handleSubmit}>
     <div class="row">
@@ -119,10 +99,8 @@ let idCategory;
         </div>
     </div>
     </form>
-</div>
-
-</div>
-
-  )
+    </div>
+    </div>
+    )
 }
 export default AddQuestion;

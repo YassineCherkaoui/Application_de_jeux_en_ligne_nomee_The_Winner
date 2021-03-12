@@ -1,12 +1,8 @@
 import React,{useState} from 'react';
-// import { Link } from 'react-router-dom';
-// import './home.css';
 import video from './pages/videos/Win.mp4'
 import Navbar from './Navbar2'
 import axios from 'axios'
-// import { Button } from './Button';
-// import './';
-import './lose.css';
+import './style/lose.css';
 
 
 const Winner = () => {
@@ -15,25 +11,24 @@ const Winner = () => {
 
     // _________________Email_____________________
     const [ sent, setSent ] = useState(false)
-	const [  setText ] = useState("")
+	const [  text, setText ] = useState("")
     // const [  Score ] = useState(0)
-    // let text;
-
-
-
+    // let text = Score;
 	const handleSend = async (e) => {
 		setSent(true)
-		try {
-			await axios.post("http://localhost:8081/send_mail", {
-                // console.log("winn");
-                Score,
-
-			})
-		} catch (error) {
-			console.error(error)
-		}
+        const data = {Score};
+        axios.post(`http://localhost:8081/send_mail`,data)
+          
+		.then(res => {
+		    if(res.error){
+				return false
+			}else{
+				
+				 console.log(res.data);
+			}
+		 
+		})
 	}
-
 
     if(Score>=100){
 
@@ -59,7 +54,7 @@ return(
       {/* <a href="/" className="btnlose">GET YOUR CERTIFICATE</a> */}
       {!sent ? (
 				<form onSubmit={handleSend}>
-					<input type="hidden" value={Score} onChange={(e) => setText(Score)} />
+					<input type="hidden" value={text} onChange={(e) => setText(e.target.value)} />
 
 					<button type="submit" className="btnsend" >GET YOUR CERTIFICATE</button>
 				</form>
